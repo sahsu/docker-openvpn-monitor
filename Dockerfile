@@ -24,7 +24,7 @@ RUN pip install -r requirements.txt \
 
 COPY openvpn-monitor.conf ./
 
-#CMD gunicorn openvpn-monitor -b 0.0.0.0:80
+
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
 ENTRYPOINT ["/sbin/entrypoint.sh"]

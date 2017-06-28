@@ -13,8 +13,6 @@ openvpn-server:
 openvpn-monitor:
   restart: "always"
   image: "openvpn-monitor"
-#  ports:
-#    - "80"
   expose:
    - "80"
   environment:
